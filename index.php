@@ -8,10 +8,10 @@ $unifi_connection->login();
 $vouchers = $unifi_connection->stat_voucher();
 
 // create a new string where there is a dash between every 5 characters
-if($vouchers) {
-    $tag1 = implode(' - ', str_split($vouchers[0]->code,5));
-    $tag2 = implode(' - ', str_split($vouchers[1]->code,5));
-    $tag3 = implode(' - ', str_split($vouchers[3]->code,5));
+if ($vouchers) {
+    $tag1 = implode(' - ', str_split($vouchers[0]->code, 5));
+    $tag2 = implode(' - ', str_split($vouchers[1]->code, 5));
+    $tag3 = implode(' - ', str_split($vouchers[3]->code, 5));
 } else {
     $tag1 = 'Error: Ratelimit exceeded';
 }
@@ -29,7 +29,7 @@ if($vouchers) {
     <link rel="stylesheet" href="mdb.min.css" />
     <title>SHOR-Guest</title>
 
-    <meta http-equiv="refresh" content="300" >
+    <meta http-equiv="refresh" content="300">
 
 </head>
 
@@ -64,4 +64,5 @@ if($vouchers) {
         </div>
     </div>
 </body>
+
 </html>
