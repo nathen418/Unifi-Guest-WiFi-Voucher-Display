@@ -47,11 +47,12 @@ if ($vouchers) {
     </header>
     <div class="mask">
         <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-black text-center">
+            <div class="mx-auto text-black text-center">
                 <img src="qr.png" width="200px" height="200px">
-                <br>
-                <br>
-                <br>
+                <h3 class="mb-4"><?php $env["PAGE_NAME"];?></h3>
+            </div>
+            <!--  -->
+            <div class="mx-auto text-black text-center ">
                 <h2 class="mb-4">Access Code</h2>
                 <h2 class="mb-4"><?php echo $tag1; ?></h2>
                 <h2 class="mb-4"><?php echo $tag2; ?></h2>
