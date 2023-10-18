@@ -1,0 +1,10 @@
+/vendor/
+/composer.lock
+/build
+.phpdoc-md
+*.xml
+.idea/*
+create_voucher.php
+qr.png
+.env
+
