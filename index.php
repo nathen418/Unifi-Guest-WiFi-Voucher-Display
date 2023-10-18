@@ -2,6 +2,7 @@
 
 require_once 'vendor/autoload.php';
 require_once 'config.php';
+$env = parse_ini_file('.env');
 $site_id = 'default';
 $unifi_connection = new UniFi_API\Client($controlleruser, $controllerpassword, $controllerurl, $site_id, $controllerversion);
 $unifi_connection->login();
@@ -13,7 +14,7 @@ if ($vouchers) {
     $tag2 = implode(' - ', str_split($vouchers[1]->code, 5));
     $tag3 = implode(' - ', str_split($vouchers[3]->code, 5));
 } else {
-    $tag1 = 'Error: Ratelimit exceeded';
+    $tag1 = 'Error: Ratelimit exceeded or API unreachable';
 }
 ?>
 
@@ -27,19 +28,14 @@ if ($vouchers) {
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <link rel="stylesheet" href="mdb.min.css" />
-    <title>SHOR-Guest</title>
-
-    <meta http-equiv="refresh" content="300">
+    <title><?php $env["PAGE_NAME"];?></title>
+     <meta http-equiv="refresh" content="300">  <!-- Refresh every 5 minutes -->
 
 </head>
 
 <body>
     <header>
         <style>
-            .navbar .nav-link {
-                color: #fff !important;
-            }
-
             img {
                 margin-left: -3.5px;
             }
