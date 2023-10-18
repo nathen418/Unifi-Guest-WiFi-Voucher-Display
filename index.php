@@ -15,6 +15,7 @@ if ($vouchers) {
     $tag3 = implode(' - ', str_split($vouchers[3]->code, 5));
 } else {
     $tag1 = 'Error: Ratelimit exceeded or API unreachable';
+    $tag2 = $tag3 = '';
 }
 ?>
 
