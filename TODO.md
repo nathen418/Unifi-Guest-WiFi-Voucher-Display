@@ -1,0 +1,2 @@
+- Add function to create new vouchers if there are no more valid vouchers. (Must always have 3 valid unused vouchers)
+- Add function to extend a guest's validity period on button click.
