@@ -14,9 +14,10 @@ This is a simple webserver that displays three current guest wifi voucher codes 
 
 
 # Credits
-This project is based on the [Unifi API Client](https://github.com/Art-of-WiFi/UniFi-API-client) by [Art of WiFi](https://github.com/Art-of-WiFi)
+This project is based on the [Unifi API Client](https://github.com/Art-of-WiFi/UniFi-API-client) by [Art of WiFi](https://github.com/Art-of-WiFi).  
+It is also based on [Internal Error Page](https://github.com/nathen418/internal-error-page).
+
 
 # License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.  
 The UniFi API Client is licensed under the MIT License - see the [UAPI.LICENSE.md](UAPI.LICENSE.md) file for details.
