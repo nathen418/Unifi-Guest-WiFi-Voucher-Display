@@ -28,6 +28,9 @@ if($vouchers) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <link rel="stylesheet" href="mdb.min.css" />
     <title>SHOR-Guest</title>
+
+    <meta http-equiv="refresh" content="300" >
+
 </head>
 
 <body>
