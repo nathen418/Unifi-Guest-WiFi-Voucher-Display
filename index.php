@@ -30,8 +30,7 @@ if ($vouchers) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <link rel="stylesheet" href="mdb.min.css" />
     <title><?php $env["PAGE_NAME"];?></title>
-     <meta http-equiv="refresh" content="300">  <!-- Refresh every 5 minutes -->
-
+    <meta http-equiv="refresh" content="300">  <!-- Refresh every 5 minutes -->
 </head>
 
 <body>
@@ -42,7 +41,7 @@ if ($vouchers) {
             }
 
             body {
-                background: white;
+                background: <?php echo $env["BACKGROUND"];?>;
             }
         </style>
     </header>
@@ -53,7 +52,7 @@ if ($vouchers) {
                 <h3 class="mb-4"><?php $env["PAGE_NAME"];?></h3>
             </div>
             <!--  -->
-            <div class="mx-auto text-black text-center ">
+            <div class="mx-auto <?php if($env["BACKGROUND"] == "black"){ echo "text-white";} else { echo "text-black";} ?> text-center ">
                 <h2 class="mb-4">Access Code</h2>
                 <h2 class="mb-4"><?php echo $tag1; ?></h2>
                 <h2 class="mb-4"><?php echo $tag2; ?></h2>

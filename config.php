@@ -4,5 +4,6 @@ $controlleruser     = $env["USER"];
 $controllerpassword = $env["PASS"];
 $controllerurl      = $env["URL"];
 $controllerversion  = $env["VERSION"];
+$background         = $env["BACKGROUND"];
 $debug = false;
 ?>
